@@ -1,17 +1,23 @@
 package easy;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.time.DayOfWeek;
+import java.time.Instant;
+import java.time.LocalDate;
 
 
 public class Temp {
 
 
-		public static void main(String[] args) {
-	
-			int negOne = Integer.MIN_VALUE + Integer.MAX_VALUE;
-			System.out.println(negOne);
-			
-		}
-	}
+	public static void main(String[] args) {
+		int year = 1900;
+		if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {			
+			 System.out.println(29);
+		} else {
+			 System.out.println(28);	
+		}	
+		
+		
+		
+		
+	}		
+}
