@@ -12,7 +12,7 @@ import java.util.Scanner;
 /**
  * [2017-11-06] Challenge #339 [Easy] Fixed-length file processing
  * https://www.reddit.com/r/dailyprogrammer/comments/7b5u96/20171106_challenge_339_easy_fixedlength_file/
- * @author oVoISheRe
+ * @author dream-tree
  *
  */
 
