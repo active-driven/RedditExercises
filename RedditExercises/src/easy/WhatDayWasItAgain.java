@@ -17,7 +17,7 @@ import java.util.Scanner;
  *  - to check out if the answer is correct
  * This solution does not use Zeller's congruence/algorithm.
  * 
- * @author oVoISheRe
+ * @author dream-tree
  */
 
 public class WhatDayWasItAgain {

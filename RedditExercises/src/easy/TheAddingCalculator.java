@@ -7,7 +7,7 @@ import java.util.Scanner;
  * https://www.reddit.com/r/dailyprogrammer/comments/6ze9z0/20170911_challenge_331_easy_the_adding_calculator/
  * Lack of time, so not done: decimal bonus, avoiding Math.abs(), exception handling.
  * 
- * @author oVoISheRe
+ * @author dream-tree
  */
 
 public class TheAddingCalculator {
