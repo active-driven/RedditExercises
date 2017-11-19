@@ -1,6 +1,5 @@
 package intermediate;
 
-import java.awt.Point;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -20,11 +19,11 @@ public class WalkInAMinefield {
 	// grid size
 	private int horizontal = 11;
 	private int vertical = 8;
-	Point[] mines;
+	Position[] mines;        //  or java.awt.Point instead
 	
 	public WalkInAMinefield(int userNumberOfMines) { 
 		Random random = new Random();
-		mines = new Point[userNumberOfMines];
+		mines = new Position[userNumberOfMines];
 		for(int i = 0; i < mines.length; i++) {
 			int a = random.nextInt(6)+1;
 			int b = random.nextInt(9)+1;
@@ -33,7 +32,7 @@ public class WalkInAMinefield {
 				i-=1;		
 				continue;			
 			} else {
-				mines[i] = new Point(a, b);	
+				mines[i] = new Position(a, b);	
 			}				
 		}
 		this.grid = new char[vertical][horizontal];        
@@ -55,8 +54,8 @@ public class WalkInAMinefield {
 			}
 		}		
 		for(int i = 0; i < userNumberOfMines; i++) {
-			int a = (int)mines[i].getX();
-			int b = (int)mines[i].getY();
+			int a = mines[i].getX();
+			int b = mines[i].getY();
 			grid[a][b] = '*';
 		}
 		printGrid();
@@ -127,3 +126,20 @@ public class WalkInAMinefield {
 	}
 }
 
+	class Position {
+		int x;
+		int y;
+		
+		Position(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+
+		public int getX() {
+			return x;
+		}
+
+		public int getY() {
+			return y;
+		}	
+	}
