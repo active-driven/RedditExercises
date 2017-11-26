@@ -18,7 +18,7 @@ import java.util.Map;
  * input: 124489903108444899
  * 		  output: 44899:2 4489:2 4899:2 448:2 489:2 899:2 44:3 48:2 89:2 99:2
  * 
- * @author oVoISheRe
+ * @author dream_tree
  */
 
 public class RepeatingNumbers {
@@ -26,7 +26,7 @@ public class RepeatingNumbers {
 	public static void main(String[] args) {
 	
 		// exercising here:
-		String allDigits = "124489903108444899";   // orig: "11325992321982432123259";
+		String allDigits = "124489903108444899";   
 		int[] allDigitsArray1 = Arrays.stream(allDigits.split("")).mapToInt(Integer::parseInt).toArray();
 		int[] allDigitsArray2 = new int[allDigits.length()]; 
 		for(int i = 0; i < allDigits.length(); i++) {
