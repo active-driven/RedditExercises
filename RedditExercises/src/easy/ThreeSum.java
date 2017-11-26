@@ -22,8 +22,7 @@ public class ThreeSum {
 	public static void main(String[] args) {
 
 		readNumbers("C:/Users/oVoISheRe/OneDrive/test files/3SUM/3SUM1.txt");
-		
-		
+	
 	}
 
 	public static void readNumbers(String s) {
@@ -75,7 +74,7 @@ public class ThreeSum {
 					start = start + 1;   // or: end = end - 1;
 				 // original wiki version:
 					// if (b == temp[start+1]) {  // I think it avoids (most but not all) checking same combinations if there are 2 same 
-					// 		start = start + 1;    // numbers next to each other; but really my ver works better but if always?
+					// 		start = start + 1;    // numbers next to each other; but my ver works better (but if always)?
 					//	} else {
 					//		end = end - 1;
 					//	}
@@ -86,10 +85,5 @@ public class ThreeSum {
 				}
 			}
 		}
-		
-		
-		
-
-	}
-	
+	}	
 }
